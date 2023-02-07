@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+    content="A dashboard is a visual display of all of your data. While it can be used in all kinds of different ways..">
+    <title>Settings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="test">
+    <section class="settings">
+        <div class="container-fluid">
+            <div class="dashboard_content">
+                <aside>
+                    <div class="sidebar">
+                        <div class="sidenav_top">
+                            <div class="logo">
+                                <a href="dashboard.html"> <img src="img/logo.svg" alt="logoimg"></a>
+                            </div>
+                            <div class="sidenav">
+                                <ul>
+                                    <li><a href="dashboard.html" class="primary-font"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 18 18" fill="none">
+                                                <path
+                                                    d="M15.7001 4.68471L10.9001 1.32637C9.59176 0.409706 7.58342 0.459706 6.32511 1.43471L2.15011 4.69304C1.31678 5.34304 0.658447 6.67637 0.658447 7.72633V13.4763C0.658447 15.6013 2.38345 17.3347 4.50845 17.3347H13.4918C15.6168 17.3347 17.3418 15.6097 17.3418 13.4847V7.83466C17.3418 6.70971 16.6168 5.32637 15.7001 4.68471ZM9.62509 14.0013C9.62509 14.343 9.34176 14.6263 9.00009 14.6263C8.65842 14.6263 8.37509 14.343 8.37509 14.0013V11.5013C8.37509 11.1597 8.65842 10.8763 9.00009 10.8763C9.34176 10.8763 9.62509 11.1597 9.62509 11.5013V14.0013Z"
+                                                    fill="#929EAE" /><span>Dashboard</span> </a></li>
+                                    <li><a href="transactions.html" class="primary-font"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M13.4917 1.66666H6.50841C3.47508 1.66666 1.66675 3.47499 1.66675 6.50832V13.4833C1.66675 16.525 3.47508 18.3333 6.50841 18.3333H13.4834C16.5167 18.3333 18.3251 16.525 18.3251 13.4917V6.50832C18.3334 3.47499 16.5251 1.66666 13.4917 1.66666ZM14.3834 8.29999L12.4584 10.7833C12.2167 11.0917 11.8751 11.2917 11.4834 11.3333C11.0917 11.3833 10.7084 11.275 10.4001 11.0333L8.87508 9.83332C8.81675 9.78332 8.75008 9.78332 8.71675 9.79166C8.68341 9.79166 8.62508 9.80832 8.57508 9.87499L6.59175 12.45C6.46675 12.6083 6.28341 12.6917 6.10008 12.6917C5.96675 12.6917 5.83341 12.65 5.71675 12.5583C5.44175 12.35 5.39175 11.9583 5.60008 11.6833L7.58342 9.10832C7.82508 8.79999 8.16675 8.59999 8.55841 8.54999C8.94175 8.49999 9.33341 8.60832 9.64175 8.84999L11.1667 10.05C11.2251 10.1 11.2834 10.1 11.3251 10.0917C11.3584 10.0917 11.4167 10.075 11.4667 10.0083L13.3917 7.52499C13.6001 7.24999 14.0001 7.19999 14.2667 7.41666C14.5417 7.64166 14.5917 8.03332 14.3834 8.29999Z"
+                                                    fill="#929EAE" /><span>Transactions</span></a>
+                                    </li>
+                                    <li><a href="invoices.html" class="primary-font"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M13.1501 1.66667H6.85008C3.70008 1.66667 2.91675 2.50834 2.91675 5.86667V15.25C2.91675 17.4667 4.13341 17.9917 5.60842 16.4083L5.61675 16.4C6.30008 15.675 7.34175 15.7333 7.93342 16.525L8.77508 17.65C9.45008 18.5417 10.5417 18.5417 11.2167 17.65L12.0584 16.525C12.6584 15.725 13.7001 15.6667 14.3834 16.4C15.8667 17.9833 17.0751 17.4583 17.0751 15.2417V5.86667C17.0834 2.50834 16.3001 1.66667 13.1501 1.66667ZM12.2917 8.95834H7.70842C7.36675 8.95834 7.08342 8.67501 7.08342 8.33334C7.08342 7.99167 7.36675 7.70834 7.70842 7.70834H12.2917C12.6334 7.70834 12.9167 7.99167 12.9167 8.33334C12.9167 8.67501 12.6334 8.95834 12.2917 8.95834Z"
+                                                    fill="#929EAE" />
+                                                <span>Invoices</span></a></li>
+                                    <li><a href="my_wallets.html" class="primary-font"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M12.3749 3.29232V6.45898H11.1249V3.29232C11.1249 3.06732 10.9249 2.95898 10.7916 2.95898C10.7499 2.95898 10.7083 2.96732 10.6666 2.98398L4.05825 5.47565C3.61659 5.64232 3.33325 6.05898 3.33325 6.53398V7.09232C2.57492 7.65898 2.08325 8.56733 2.08325 9.59233V6.53398C2.08325 5.54232 2.69159 4.65898 3.61659 4.30898L10.2333 1.80898C10.4166 1.74232 10.6083 1.70898 10.7916 1.70898C11.6249 1.70898 12.3749 2.38398 12.3749 3.29232ZM17.9172 12.0833V12.9167C17.9172 13.1417 17.7422 13.325 17.5088 13.3333H16.2922C15.8505 13.3333 15.4505 13.0083 15.4172 12.575C15.3922 12.3167 15.4922 12.075 15.6588 11.9083C15.8088 11.75 16.0172 11.6667 16.2422 11.6667H17.5005C17.7422 11.675 17.9172 11.8583 17.9172 12.0833Z"
+                                                    fill="#929EAE" />
+                                                <path
+                                                    d="M16.2333 10.7917H17.0833C17.5416 10.7917 17.9166 10.4167 17.9166 9.95833V9.59166C17.9166 7.86666 16.5083 6.45833 14.7833 6.45833H5.21659C4.50825 6.45833 3.85825 6.69166 3.33325 7.09166C2.57492 7.65833 2.08325 8.56666 2.08325 9.59166V15.2C2.08325 16.925 3.49159 18.3333 5.21659 18.3333H14.7833C16.5083 18.3333 17.9166 16.925 17.9166 15.2V15.0417C17.9166 14.5833 17.5416 14.2083 17.0833 14.2083H16.3583C15.5583 14.2083 14.7916 13.7167 14.5833 12.9417C14.4083 12.3083 14.6166 11.7 15.0333 11.2917C15.3416 10.975 15.7666 10.7917 16.2333 10.7917ZM11.6666 10.625H5.83325C5.49159 10.625 5.20825 10.3417 5.20825 9.99999C5.20825 9.65833 5.49159 9.37499 5.83325 9.37499H11.6666C12.0083 9.37499 12.2916 9.65833 12.2916 9.99999C12.2916 10.3417 12.0083 10.625 11.6666 10.625Z"
+                                                    fill="#929EAE" /><span>My Wallets</span></a>
+                                    </li>
+                                    <li ><a href="newsetting.html" class="primary-font active">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M16.7503 7.68458C15.242 7.68458 14.6253 6.61792 15.3753 5.30958C15.8087 4.55125 15.5503 3.58458 14.792 3.15125L13.3503 2.32625C12.692 1.93458 11.842 2.16792 11.4503 2.82625L11.3587 2.98458C10.6087 4.29292 9.37533 4.29292 8.61699 2.98458L8.52533 2.82625C8.15033 2.16792 7.30033 1.93458 6.64199 2.32625L5.20033 3.15125C4.44199 3.58458 4.18366 4.55958 4.61699 5.31792C5.37533 6.61792 4.75866 7.68458 3.25033 7.68458C2.38366 7.68458 1.66699 8.39291 1.66699 9.26791V10.7346C1.66699 11.6012 2.37533 12.3179 3.25033 12.3179C4.75866 12.3179 5.37533 13.3846 4.61699 14.6929C4.18366 15.4512 4.44199 16.4179 5.20033 16.8512L6.64199 17.6762C7.30033 18.0679 8.15033 17.8346 8.54199 17.1762L8.63366 17.0179C9.38366 15.7096 10.617 15.7096 11.3753 17.0179L11.467 17.1762C11.8587 17.8346 12.7087 18.0679 13.367 17.6762L14.8087 16.8512C15.567 16.4179 15.8253 15.4429 15.392 14.6929C14.6337 13.3846 15.2503 12.3179 16.7587 12.3179C17.6253 12.3179 18.342 11.6096 18.342 10.7346V9.26791C18.3337 8.40125 17.6253 7.68458 16.7503 7.68458ZM10.0003 12.7096C8.50866 12.7096 7.29199 11.4929 7.29199 10.0012C7.29199 8.50958 8.50866 7.29292 10.0003 7.29292C11.492 7.29292 12.7087 8.50958 12.7087 10.0012C12.7087 11.4929 11.492 12.7096 10.0003 12.7096Z"
+                                                    fill="#929EAE" />
+                                                <span>Settings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidenav_bottom">
+                            <ul>
+                                <li><a href="#" class="primary-font"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M14.1667 2.02475H5.83342C3.33341 2.02475 1.66675 3.69142 1.66675 6.19142V11.1914C1.66675 13.6914 3.33341 15.3581 5.83342 15.3581V17.1331C5.83342 17.7998 6.57508 18.1998 7.12508 17.8248L10.8334 15.3581H14.1667C16.6667 15.3581 18.3334 13.6914 18.3334 11.1914V6.19142C18.3334 3.69142 16.6667 2.02475 14.1667 2.02475ZM10.0001 12.1664C9.65008 12.1664 9.37508 11.8831 9.37508 11.5414C9.37508 11.1998 9.65008 10.9164 10.0001 10.9164C10.3501 10.9164 10.6251 11.1998 10.6251 11.5414C10.6251 11.8831 10.3501 12.1664 10.0001 12.1664ZM11.0501 8.70809C10.7251 8.92476 10.6251 9.06643 10.6251 9.29976V9.47476C10.6251 9.81643 10.3417 10.0998 10.0001 10.0998C9.65842 10.0998 9.37508 9.81643 9.37508 9.47476V9.29976C9.37508 8.33308 10.0834 7.85808 10.3501 7.67475C10.6584 7.46642 10.7584 7.32475 10.7584 7.10808C10.7584 6.69142 10.4167 6.34975 10.0001 6.34975C9.58342 6.34975 9.24175 6.69142 9.24175 7.10808C9.24175 7.44975 8.95842 7.73308 8.61675 7.73308C8.27508 7.73308 7.99175 7.44975 7.99175 7.10808C7.99175 5.99975 8.89175 5.09975 10.0001 5.09975C11.1084 5.09975 12.0084 5.99975 12.0084 7.10808C12.0084 8.05808 11.3084 8.53309 11.0501 8.70809Z"
+                                                fill="#929EAE" />
+                                            <span>Help</span></a></li>
+                                <li><a href="#" class="primary-font"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M6.56515 10.0583C6.56515 9.71666 6.84849 9.43332 7.19015 9.43332H11.7568V2.38332C11.7485 1.98332 11.4318 1.66666 11.0318 1.66666C6.12349 1.66666 2.69849 5.09166 2.69849 9.99999C2.69849 14.9083 6.12349 18.3333 11.0318 18.3333C11.4235 18.3333 11.7485 18.0167 11.7485 17.6167V10.675H7.19015C6.84015 10.6833 6.56515 10.4 6.56515 10.0583Z"
+                                                fill="#929EAE" />
+                                            <path
+                                                d="M17.1179 9.61683L14.7512 7.2418C14.5096 7.00013 14.1096 7.00013 13.8679 7.2418C13.6262 7.48346 13.6262 7.88346 13.8679 8.12513L15.1679 9.42516H11.7512V10.6752H15.1596L13.8596 11.9752C13.6179 12.2168 13.6179 12.6168 13.8596 12.8585C13.9846 12.9835 14.1429 13.0418 14.3012 13.0418C14.4596 13.0418 14.6179 12.9835 14.7429 12.8585L17.1096 10.4835C17.3596 10.2502 17.3596 9.8585 17.1179 9.61683Z"
+                                                fill="#929EAE" />
+                                            <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <div class="main">
+                    <button class="hamburger_icon" onclick="myFunction2()" aria-label="hamburger_icon">
+                        <i class="fa-solid fa-bars hambar"></i>
+                        <i class="fa-solid fa-arrow-right-long right_icon"></i>
+                    </button>
+                    <nav>
+                        <h1 class="heading">Settings</h1>
+                        <ul>
+                            <li class="search_expand"><a href="#">
+                                    <div class="search-container">
+                                        <form action="/search" method="get">
+                                            <input class="search expandright" id="searchright" type="search" name="q"
+                                                placeholder="Search">
+                                            <label class="button searchbutton" for="searchright">
+                                                <div onclick="myFunction()" class="hidebtn">
+                                                    <span type="button" class="mglass sicon"><i
+                                                            class="fa-solid fa-magnifying-glass"></i></span>
+                                                    <i class="fa-solid fa-xmark xmark"></i>
+                                                </div>
+                                            </label>
+                                        </form>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="notification-drop">
+                                <a href="#" class="notification-icon">
+                                    <button onclick="myFunction1()" class="ntfbtn" aria-label="click"> 
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M20.1892 14.0608L19.0592 12.1808C18.8092 11.7708 18.5892 10.9808 18.5892 10.5008V8.63078C18.5892 5.00078 15.6392 2.05078 12.0192 2.05078C8.38923 2.06078 5.43923 5.00078 5.43923 8.63078V10.4908C5.43923 10.9708 5.21923 11.7608 4.97923 12.1708L3.84923 14.0508C3.41923 14.7808 3.31923 15.6108 3.58923 16.3308C3.85923 17.0608 4.46923 17.6408 5.26923 17.9008C6.34923 18.2608 7.43923 18.5208 8.54923 18.7108C8.65923 18.7308 8.76923 18.7408 8.87923 18.7608C9.01923 18.7808 9.16923 18.8008 9.31923 18.8208C9.57923 18.8608 9.83923 18.8908 10.1092 18.9108C10.7392 18.9708 11.3792 19.0008 12.0192 19.0008C12.6492 19.0008 13.2792 18.9708 13.8992 18.9108C14.1292 18.8908 14.3592 18.8708 14.5792 18.8408C14.7592 18.8208 14.9392 18.8008 15.1192 18.7708C15.2292 18.7608 15.3392 18.7408 15.4492 18.7208C16.5692 18.5408 17.6792 18.2608 18.7592 17.9008C19.5292 17.6408 20.1192 17.0608 20.3992 16.3208C20.6792 15.5708 20.5992 14.7508 20.1892 14.0608ZM12.7492 10.0008C12.7492 10.4208 12.4092 10.7608 11.9892 10.7608C11.5692 10.7608 11.2292 10.4208 11.2292 10.0008V6.90078C11.2292 6.48078 11.5692 6.14078 11.9892 6.14078C12.4092 6.14078 12.7492 6.48078 12.7492 6.90078V10.0008ZM14.8297 20.01C14.4097 21.17 13.2997 22 11.9997 22C11.2097 22 10.4297 21.68 9.87969 21.11C9.55969 20.81 9.31969 20.41 9.17969 20C9.30969 20.02 9.43969 20.03 9.57969 20.05C9.80969 20.08 10.0497 20.11 10.2897 20.13C10.8597 20.18 11.4397 20.21 12.0197 20.21C12.5897 20.21 13.1597 20.18 13.7197 20.13C13.9297 20.11 14.1397 20.1 14.3397 20.07C14.4997 20.05 14.6597 20.03 14.8297 20.01Z"
+                                                fill="#929EAE" />
+
+                                    </button>
+                                    <span class="num-count">2</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 show"
+                                    aria-labelledby="page-header-notifications-dropdown"
+                                    data-popper-placement="bottom-end"
+                                    style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 44px);">
+
+                                    <div class="dropdown-head bg-primary bg-pattern rounded-top">
+                                        <div class="p-3">
+                                            <div class="row align-items-center">
+                                                <div class="col">
+                                                    <h6 class="m-0 fs-16 fw-semibold text-white"> Notifications </h6>
+                                                </div>
+                                                <div class="col-auto dropdown-tabs">
+                                                    <span class="badge badge-soft-light fs-13"> 4 New</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-2 pt-2">
+                                            <ul class="nav nav-tabs dropdown-tabs nav-tabs-custom"
+                                                data-dropdown-tabs="true" id="notificationItemsTab" role="tablist">
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link primary-font" data-bs-toggle="tab"
+                                                        href="#all-noti-tab" role="tab" aria-selected="false">
+                                                        All (4)
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link primary-font" data-bs-toggle="tab"
+                                                        href="#messages-tab" role="tab" aria-selected="false">
+                                                        Messages
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link active primary-font" data-bs-toggle="tab"
+                                                        href="#alerts-tab" role="tab" aria-selected="true">
+                                                        Alerts
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content" id="notificationItemsTabContent">
+                                        <div class="tab-pane fade py-2 ps-2" id="all-noti-tab" role="tabpanel">
+                                            <div data-simplebar="init" style="max-height: 300px;" class="pe-2">
+                                                <div class="simplebar-wrapper" style="margin: 0px -8px 0px 0px;">
+                                                    <div class="simplebar-height-auto-observer-wrapper">
+                                                        <div class="simplebar-height-auto-observer"></div>
+                                                    </div>
+                                                    <div class="simplebar-mask">
+                                                        <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                                            <div class="simplebar-content-wrapper" tabindex="0"
+                                                                role="region" aria-label="scrollable content"
+                                                                style="height: auto; overflow: hidden;">
+                                                                <div class="simplebar-content"
+                                                                    style="padding: 0px 8px 0px 0px;">
+                                                                    <div
+                                                                        class="text-reset notification-item d-block dropdown-item position-relative">
+                                                                        <div class="d-flex">
+                                                                            <img src="img/jakir.svg"
+                                                                                class="me-3 rounded-circle avatar-xs"
+                                                                                alt="user-pic">
+                                                                            <div class="flex-1">
+                                                                                <a href="#!" class="stretched-link">
+                                                                                    <h6
+                                                                                        class="mt-0 mb-1 fs-13 fw-semibold">
+                                                                                        Saleh Ahmed</h6>
+                                                                                </a>
+                                                                                <div class="fs-13 text-muted">
+                                                                                    <p class="mb-1">Answered to your
+                                                                                        comment on the cash flow
+                                                                                        forecast's
+                                                                                        graph 🔔.</p>
+                                                                                </div>
+                                                                                <p
+                                                                                    class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                                    <span><i <i
+                                                                                            class="fa-regular fa-clock"></i>
+                                                                                        48 min ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div
+                                                                                    class="form-check notification-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox" value=""
+                                                                                        id="all-notification-check02"
+                                                                                        checked="">
+                                                                                    <label class="form-check-label"
+                                                                                        for="all-notification-check02"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="text-reset notification-item d-block dropdown-item position-relative">
+                                                                        <div class="d-flex">
+                                                                            <img src="img/avtar.svg"
+                                                                                class="me-3 rounded-circle avatar-xs"
+                                                                                alt="user-pic">
+                                                                            <div class="flex-1">
+                                                                                <a href="#!" class="stretched-link">
+                                                                                    <h6
+                                                                                        class="mt-0 mb-1 fs-13 fw-semibold">
+                                                                                        Delowar Hossain</h6>
+                                                                                </a>
+                                                                                <div class="fs-13 text-muted">
+                                                                                    <p class="mb-1">We talked about a
+                                                                                        project on linkedin.</p>
+                                                                                </div>
+                                                                                <p
+                                                                                    class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                                    <span><i <i
+                                                                                            class="fa-regular fa-clock"></i>
+                                                                                        4 hrs ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div
+                                                                                    class="form-check notification-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox" value=""
+                                                                                        id="all-notification-check04">
+                                                                                    <label class="form-check-label"
+                                                                                        for="all-notification-check04"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="my-3 text-center">
+                                                                        <button type="button"
+                                                                            class="btn btn-soft-success waves-effect waves-light">View
+                                                                            All Notifications
+                                                                            <i
+                                                                                class="fa-solid fa-arrow-right-long"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="simplebar-placeholder" style="width: 0px; height: 0px;">
+                                                    </div>
+                                                </div>
+                                                <div class="simplebar-track simplebar-horizontal"
+                                                    style="visibility: hidden;">
+                                                    <div class="simplebar-scrollbar" style="width: 0px; display: none;">
+                                                    </div>
+                                                </div>
+                                                <div class="simplebar-track simplebar-vertical"
+                                                    style="visibility: hidden;">
+                                                    <div class="simplebar-scrollbar"
+                                                        style="height: 0px; display: none; transform: translate3d(0px, 0px, 0px);">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade py-2 ps-2" id="messages-tab" role="tabpanel"
+                                            aria-labelledby="messages-tab">
+                                            <div data-simplebar="init" style="max-height: 300px;" class="pe-2">
+                                                <div class="simplebar-wrapper" style="margin: 0px -8px 0px 0px;">
+                                                    <div class="simplebar-height-auto-observer-wrapper">
+                                                        <div class="simplebar-height-auto-observer"></div>
+                                                    </div>
+                                                    <div class="simplebar-mask">
+                                                        <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                                            <div class="simplebar-content-wrapper" tabindex="0"
+                                                                role="region" aria-label="scrollable content"
+                                                                style="height: auto; overflow: hidden;">
+                                                                <div class="simplebar-content"
+                                                                    style="padding: 0px 8px 0px 0px;">
+                                                                    <div
+                                                                        class="text-reset notification-item d-block dropdown-item">
+                                                                        <div class="d-flex">
+                                                                            <img src="img/delowar.svg"
+                                                                                class="me-3 rounded-circle avatar-xs"
+                                                                                alt="user-pic">
+                                                                            <div class="flex-1">
+                                                                                <a href="#!" class="stretched-link">
+                                                                                    <h6
+                                                                                        class="mt-0 mb-1 fs-13 fw-semibold">
+                                                                                        Dr. Jubed Ahmed</h6>
+                                                                                </a>
+                                                                                <div class="fs-13 text-muted">
+                                                                                    <p class="mb-1">We talked about a
+                                                                                        project on linkedin.</p>
+                                                                                </div>
+                                                                                <p
+                                                                                    class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                                    <span><i <i
+                                                                                            class="fa-regular fa-clock"></i>
+                                                                                        30 min ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div
+                                                                                    class="form-check notification-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox" value=""
+                                                                                        id="messages-notification-check01">
+                                                                                    <label class="form-check-label"
+                                                                                        for="messages-notification-check01"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="text-reset notification-item d-block dropdown-item">
+                                                                        <div class="d-flex">
+                                                                            <img src="img/hasan.svg"
+                                                                                class="me-3 rounded-circle avatar-xs"
+                                                                                alt="user-pic">
+                                                                            <div class="flex-1">
+                                                                                <a href="#!" class="stretched-link">
+                                                                                    <h6
+                                                                                        class="mt-0 mb-1 fs-13 fw-semibold">
+                                                                                        AR. Jakir Alp</h6>
+                                                                                </a>
+                                                                                <div class="fs-13 text-muted">
+                                                                                    <p class="mb-1">Answered to your
+                                                                                        comment on the cash flow
+                                                                                        forecast's
+                                                                                        graph 🔔.</p>
+                                                                                </div>
+                                                                                <p
+                                                                                    class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                                    <span><i <i
+                                                                                            class="fa-regular fa-clock"></i>
+                                                                                        2 hrs ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div
+                                                                                    class="form-check notification-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox" value=""
+                                                                                        id="messages-notification-check02">
+                                                                                    <label class="form-check-label"
+                                                                                        for="messages-notification-check02"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="text-reset notification-item d-block dropdown-item">
+                                                                        <div class="d-flex">
+                                                                            <img src="img/jakir.svg"
+                                                                                class="me-3 rounded-circle avatar-xs"
+                                                                                alt="user-pic">
+                                                                            <div class="flex-1">
+                                                                                <a href="#!" class="stretched-link">
+                                                                                    <h6
+                                                                                        class="mt-0 mb-1 fs-13 fw-semibold">
+                                                                                        Maureen Gibson</h6>
+                                                                                </a>
+                                                                                <div class="fs-13 text-muted">
+                                                                                    <p class="mb-1">We talked about a
+                                                                                        project on linkedin.</p>
+                                                                                </div>
+                                                                                <p
+                                                                                    class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                                    <span><i <i
+                                                                                            class="fa-regular fa-clock"></i>
+                                                                                        3 days ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div
+                                                                                    class="form-check notification-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox" value=""
+                                                                                        id="messages-notification-check04">
+                                                                                    <label class="form-check-label"
+                                                                                        for="messages-notification-check04"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="my-3 text-center">
+                                                                        <button type="button"
+                                                                            class="btn btn-soft-success waves-effect waves-light">View
+                                                                            All Messages 
+                                                                            <i
+                                                                                class="ri-arrow-right-line align-middle"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="simplebar-placeholder" style="width: 0px; height: 0px;">
+                                                    </div>
+                                                </div>
+                                                <div class="simplebar-track simplebar-horizontal"
+                                                    style="visibility: hidden;">
+                                                    <div class="simplebar-scrollbar" style="width: 0px; display: none;">
+                                                    </div>
+                                                </div>
+                                                <div class="simplebar-track simplebar-vertical"
+                                                    style="visibility: hidden;">
+                                                    <div class="simplebar-scrollbar"
+                                                        style="height: 0px; display: none; transform: translate3d(0px, 128px, 0px);">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade p-4 active show" id="alerts-tab" role="tabpanel"
+                                            aria-labelledby="alerts-tab">
+                                            <div class="w-25 w-sm-50 pt-3 mx-auto">
+                                                <!-- <img src="assets/images/svg/bell.svg" class="img-fluid" alt="user-pic"> -->
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                    id="Layer_1" x="0px" y="0px" viewBox="0 0 512.001 512.001"
+                                                    style="enable-background:new 0 0 512.001 512.001;"
+                                                    xml:space="preserve">
+                                                    <g>
+                                                        <path style="fill:#CEE8FA;"
+                                                            d="M256.001,98.244L256.001,98.244c10.954,0,21.583,1.388,31.721,3.996V69.405   c0-17.519-14.202-31.721-31.721-31.721l0,0c-17.519,0-31.721,14.202-31.721,31.721v32.835   C234.418,99.632,245.047,98.244,256.001,98.244z" />
+                                                        <polygon style="fill:#CEE8FA;"
+                                                            points="417.207,405.793 94.793,405.793 129.088,315.654 382.914,315.654  " />
+                                                        <circle style="fill:#CEE8FA;" cx="255.997" cy="440.073"
+                                                            r="34.251" />
+                                                    </g>
+                                                    <g>
+                                                        <path style="fill:#2D527C;"
+                                                            d="M429.577,400.155l-33.984-89.325c-2.004-5.263-7.047-8.741-12.679-8.741H142.629v-76.91   c0-54.637,38.851-100.367,90.377-111.022c0.111-0.023,0.221-0.046,0.332-0.068c1.715-0.35,3.444-0.658,5.187-0.929   c0.296-0.045,0.591-0.081,0.887-0.125c1.308-0.193,2.625-0.355,3.946-0.503c0.555-0.061,1.108-0.129,1.663-0.182   c1.399-0.134,2.805-0.239,4.219-0.321c0.75-0.043,1.502-0.076,2.253-0.104c0.952-0.038,1.909-0.058,2.868-0.073   c1.092-0.015,2.183-0.015,3.275,0c0.959,0.014,1.915,0.035,2.868,0.073c0.751,0.03,1.503,0.061,2.253,0.104   c1.413,0.084,2.82,0.187,4.219,0.321c0.555,0.053,1.108,0.121,1.663,0.182c1.321,0.148,2.638,0.311,3.946,0.503   c0.296,0.043,0.591,0.08,0.887,0.125c1.742,0.271,3.471,0.579,5.187,0.929c0.111,0.022,0.221,0.046,0.332,0.068   c51.526,10.657,90.377,56.385,90.377,111.022v37.166c0,7.492,6.074,13.565,13.565,13.565s13.565-6.073,13.565-13.565v-37.166   c0-61.633-39.893-114.123-95.213-133.009V69.405c0-24.97-20.316-45.286-45.286-45.286s-45.286,20.316-45.286,45.286V92.17   c-55.32,18.886-95.213,71.376-95.213,133.009v88.036l-33.386,87.754c-1.586,4.168-1.021,8.851,1.511,12.523   c2.531,3.672,6.706,5.865,11.167,5.865h118.116c-3.025,6.27-4.722,13.296-4.722,20.711c0,26.365,21.45,47.814,47.814,47.814   s47.814-21.449,47.814-47.813c0-7.415-1.697-14.441-4.722-20.711h118.116c0.011,0,0.022,0,0.027,0   c7.492,0,13.565-6.073,13.565-13.565C430.799,403.781,430.362,401.873,429.577,400.155z M237.844,85.846V69.405   c0-10.011,8.144-18.157,18.157-18.157c10.012,0,18.157,8.144,18.157,18.157v16.441c-0.065-0.008-0.129-0.014-0.194-0.022   c-1.324-0.17-2.655-0.317-3.989-0.45c-0.41-0.041-0.822-0.073-1.232-0.11c-0.982-0.088-1.968-0.17-2.956-0.237   c-0.469-0.033-0.939-0.062-1.408-0.09c-0.981-0.058-1.964-0.104-2.95-0.142c-0.419-0.016-0.838-0.035-1.259-0.047   c-1.385-0.041-2.774-0.066-4.168-0.066c-1.394,0-2.784,0.026-4.168,0.066c-0.421,0.012-0.84,0.033-1.259,0.047   c-0.986,0.038-1.97,0.084-2.95,0.142c-0.469,0.027-0.939,0.057-1.408,0.09c-0.989,0.068-1.974,0.149-2.956,0.237   c-0.411,0.037-0.822,0.069-1.232,0.11c-1.335,0.133-2.665,0.281-3.989,0.45C237.973,85.832,237.908,85.838,237.844,85.846z    M256.001,460.753c-11.405,0-20.684-9.278-20.684-20.684c0-11.405,9.278-20.684,20.684-20.684s20.684,9.278,20.684,20.684   C276.684,451.474,267.406,460.753,256.001,460.753z M114.467,392.228l23.972-63.01h235.123l23.972,63.01H114.467z" />
+                                                        <path style="fill:#2D527C;"
+                                                            d="M429.565,307.849c-4.136,0-8.219-1.884-10.882-5.453c-4.48-6.005-3.246-14.504,2.759-18.984   c8.747-6.527,13.763-16.518,13.763-27.411s-5.016-20.885-13.763-27.411c-6.005-4.48-7.24-12.979-2.759-18.984   c4.48-6.004,12.98-7.241,18.984-2.759c15.446,11.526,24.669,29.901,24.669,49.154s-9.223,37.629-24.669,49.154   C435.232,306.971,432.386,307.849,429.565,307.849z" />
+                                                        <path style="fill:#2D527C;"
+                                                            d="M466.412,339.362c-3.814,0-7.603-1.598-10.286-4.715c-4.889-5.678-4.249-14.243,1.43-19.131   c17.359-14.944,27.316-36.637,27.316-59.516s-9.957-44.57-27.316-59.516c-5.678-4.889-6.317-13.452-1.43-19.131   c4.889-5.677,13.451-6.317,19.131-1.43c23.352,20.105,36.745,49.291,36.745,80.076s-13.393,59.972-36.745,80.076   C472.696,338.282,469.545,339.362,466.412,339.362z" />
+                                                        <path style="fill:#2D527C;"
+                                                            d="M82.435,307.849c-2.821,0-5.667-0.876-8.102-2.694c-15.446-11.526-24.669-29.901-24.669-49.154   c0-19.253,9.223-37.629,24.669-49.154c6.004-4.48,14.502-3.245,18.984,2.759c4.48,6.005,3.246,14.504-2.759,18.984   c-8.747,6.527-13.763,16.518-13.763,27.411c0,10.893,5.016,20.885,13.763,27.411c6.005,4.48,7.24,12.979,2.759,18.984   C90.656,305.965,86.571,307.849,82.435,307.849z" />
+                                                        <path style="fill:#2D527C;"
+                                                            d="M45.588,339.362c-3.135,0-6.282-1.08-8.844-3.284C13.393,315.973,0,286.785,0,256.001   s13.393-59.972,36.745-80.076c5.678-4.889,14.244-4.246,19.131,1.43c4.889,5.678,4.249,14.243-1.43,19.131   C37.086,211.43,27.13,233.123,27.13,256.001c0,22.879,9.957,44.57,27.316,59.516c5.678,4.889,6.317,13.452,1.43,19.131   C53.192,337.762,49.401,339.362,45.588,339.362z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="text-center pb-5 mt-2">
+                                                <h6 class="fs-18 fw-semibold lh-base">Hey! You have no any notifications
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="user nav-item dropdown ">
+                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="img/avtar.svg" alt="">
+                                    <p>Mahfuzul Nabil</p>
+                                    <span><img src="img/Dropdown.svg" alt=""></span>
+                                </a>
+                                <ul class="dropdown-menu user-drop">
+                                    <h5>Welcome Mahfuzul!</h5>
+                                    <li>
+                                        <a class="dropdown-item" href="dashboard.html">
+                                            <i class="fa-solid fa-circle-user"></i>
+                                            <span class="primary-font">Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="index.html">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <span class="primary-font">Messages</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="newsetting.html" class="primary-font">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M16.7503 7.68458C15.242 7.68458 14.6253 6.61792 15.3753 5.30958C15.8087 4.55125 15.5503 3.58458 14.792 3.15125L13.3503 2.32625C12.692 1.93458 11.842 2.16792 11.4503 2.82625L11.3587 2.98458C10.6087 4.29292 9.37533 4.29292 8.61699 2.98458L8.52533 2.82625C8.15033 2.16792 7.30033 1.93458 6.64199 2.32625L5.20033 3.15125C4.44199 3.58458 4.18366 4.55958 4.61699 5.31792C5.37533 6.61792 4.75866 7.68458 3.25033 7.68458C2.38366 7.68458 1.66699 8.39291 1.66699 9.26791V10.7346C1.66699 11.6012 2.37533 12.3179 3.25033 12.3179C4.75866 12.3179 5.37533 13.3846 4.61699 14.6929C4.18366 15.4512 4.44199 16.4179 5.20033 16.8512L6.64199 17.6762C7.30033 18.0679 8.15033 17.8346 8.54199 17.1762L8.63366 17.0179C9.38366 15.7096 10.617 15.7096 11.3753 17.0179L11.467 17.1762C11.8587 17.8346 12.7087 18.0679 13.367 17.6762L14.8087 16.8512C15.567 16.4179 15.8253 15.4429 15.392 14.6929C14.6337 13.3846 15.2503 12.3179 16.7587 12.3179C17.6253 12.3179 18.342 11.6096 18.342 10.7346V9.26791C18.3337 8.40125 17.6253 7.68458 16.7503 7.68458ZM10.0003 12.7096C8.50866 12.7096 7.29199 11.4929 7.29199 10.0012C7.29199 8.50958 8.50866 7.29292 10.0003 7.29292C11.492 7.29292 12.7087 8.50958 12.7087 10.0012C12.7087 11.4929 11.492 12.7096 10.0003 12.7096Z"
+                                                    fill="#929EAE" />
+                                                <span>Settings</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="primary-font"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M14.1667 2.02475H5.83342C3.33341 2.02475 1.66675 3.69142 1.66675 6.19142V11.1914C1.66675 13.6914 3.33341 15.3581 5.83342 15.3581V17.1331C5.83342 17.7998 6.57508 18.1998 7.12508 17.8248L10.8334 15.3581H14.1667C16.6667 15.3581 18.3334 13.6914 18.3334 11.1914V6.19142C18.3334 3.69142 16.6667 2.02475 14.1667 2.02475ZM10.0001 12.1664C9.65008 12.1664 9.37508 11.8831 9.37508 11.5414C9.37508 11.1998 9.65008 10.9164 10.0001 10.9164C10.3501 10.9164 10.6251 11.1998 10.6251 11.5414C10.6251 11.8831 10.3501 12.1664 10.0001 12.1664ZM11.0501 8.70809C10.7251 8.92476 10.6251 9.06643 10.6251 9.29976V9.47476C10.6251 9.81643 10.3417 10.0998 10.0001 10.0998C9.65842 10.0998 9.37508 9.81643 9.37508 9.47476V9.29976C9.37508 8.33308 10.0834 7.85808 10.3501 7.67475C10.6584 7.46642 10.7584 7.32475 10.7584 7.10808C10.7584 6.69142 10.4167 6.34975 10.0001 6.34975C9.58342 6.34975 9.24175 6.69142 9.24175 7.10808C9.24175 7.44975 8.95842 7.73308 8.61675 7.73308C8.27508 7.73308 7.99175 7.44975 7.99175 7.10808C7.99175 5.99975 8.89175 5.09975 10.0001 5.09975C11.1084 5.09975 12.0084 5.99975 12.0084 7.10808C12.0084 8.05808 11.3084 8.53309 11.0501 8.70809Z"
+                                                    fill="#929EAE" />
+                                                <span>Help</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="primary-font"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M6.56515 10.0583C6.56515 9.71666 6.84849 9.43332 7.19015 9.43332H11.7568V2.38332C11.7485 1.98332 11.4318 1.66666 11.0318 1.66666C6.12349 1.66666 2.69849 5.09166 2.69849 9.99999C2.69849 14.9083 6.12349 18.3333 11.0318 18.3333C11.4235 18.3333 11.7485 18.0167 11.7485 17.6167V10.675H7.19015C6.84015 10.6833 6.56515 10.4 6.56515 10.0583Z"
+                                                    fill="#929EAE" />
+                                                <path
+                                                    d="M17.1179 9.61683L14.7512 7.2418C14.5096 7.00013 14.1096 7.00013 13.8679 7.2418C13.6262 7.48346 13.6262 7.88346 13.8679 8.12513L15.1679 9.42516H11.7512V10.6752H15.1596L13.8596 11.9752C13.6179 12.2168 13.6179 12.6168 13.8596 12.8585C13.9846 12.9835 14.1429 13.0418 14.3012 13.0418C14.4596 13.0418 14.6179 12.9835 14.7429 12.8585L17.1096 10.4835C17.3596 10.2502 17.3596 9.8585 17.1179 9.61683Z"
+                                                    fill="#929EAE" />
+                                                <span>Logout</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="main_content">
+                        <div class="row">
+                            <div class="col-sm-12 setting">
+                                <div class="cards">
+                                    <div class="account-info">
+                                        <h2>Account Information</h2>
+                                        <p>Update your account information</p>
+                                        <div class="personal-info">
+                                            <div class="info-edit d-flex justify-content-between align-items-center">
+                                                <h2>Personal Information</h2>
+                                                <button><img src="img/Edit.svg" alt="">
+                                                    <span>Edit</span></button>
+                                            </div>
+                                            <div class="personal-form">
+                                                <form class="row g-3">
+                                                    <div class="col-md-6">
+                                                        <label for="firstname" class="form-label primary-font">First
+                                                            Name</label>
+                                                        <input type="text" class="form-control" id="inputname"
+                                                            placeholder="Mahfuzul Islam">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="lastname"
+                                                            class="form-label primary-font">Last</label>
+                                                        <input type="text" class="form-control" id="inputlastname"
+                                                            placeholder="Nabil">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="dob">
+                                                            <label for="inputEmail4"
+                                                                class="form-label primary-font">Date of
+                                                                Birth</label>
+                                                            <img src="img/birth.svg" alt="">
+                                                            <input type="text" class="form-control" id="inputEmail4"
+                                                                placeholder="27/09/1998">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputPassword4"
+                                                            class="form-label primary-font">Mobile
+                                                            Number</label>
+                                                        <input type="tel" class="form-control" id="inputPassword4"
+                                                            placeholder="+123 456 7890">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="email">
+                                                            <label for="inputEmail4"
+                                                                class="form-label primary-font">Email</label>
+                                                            <img src="img/Email.svg" alt="">
+                                                            <input type="email" class="form-control" id="inputEmail4"
+                                                                placeholder="hellouihut@gmail.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="password">
+                                                            <label for="inputPassword4"
+                                                                class="form-label primary-font">New
+                                                                Password</label>
+                                                            <img src="img/password.svg" alt="" class="lock">
+                                                            <input type="password" class="form-control" id="newPassword"
+                                                                placeholder="••••••••">
+                                                            <img src="img/Eye On.svg" alt="" class="eye">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="password">
+                                                            <label for="password"
+                                                                class="form-label primary-font">Confirm
+                                                                Password</label>
+                                                            <img src="img/password.svg" alt="" class="lock">
+                                                            <input type="password" class="form-control"
+                                                                id="ConfirmPassword" placeholder="••••••••">
+                                                            <img src="img/Eye On.svg" alt="" class="eye">
+                                                        </div>
+                                                    </div>
+                                                    <button>Update</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c7a1b9b71e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
